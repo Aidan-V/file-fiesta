@@ -5,11 +5,14 @@ import React, { useEffect, useState } from 'react'
 function page() {
 
   const [message, setMessage] = useState("Loading");
+  
 
   useEffect(() => {
     fetch("http://localhost:8080/api/home")
     .then((response) => response.json())
     .then((data) => {
+      // message = 'Loading'
+      //once data is retrieved, msg = msg
       setMessage(data.message);
     })
   }, [])

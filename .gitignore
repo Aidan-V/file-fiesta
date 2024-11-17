@@ -3,7 +3,8 @@ node_modules/
 .next/
 .env.local
 
+.env
 # General
 .DS_Store
 *.log
-ven/
+.env
